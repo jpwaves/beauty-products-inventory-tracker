@@ -1,10 +1,35 @@
 # Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
-one:
-  account: one
-  product: one
-
-two:
-  account: two
-  product: two
+fulfilled:
+  account: replenishments_test
+  product: cleanser
   fulfilled_at: 2024-05-11
+
+unfulfilled:
+  account: replenishments_test
+  product: cleanser
+
+replenish_toner:
+  account: many_products_with_no_unfulfilled_replenishments
+  product: toner
+
+replenish_hair_conditioner:
+  account: many_products_with_all_unfulfilled_replenishments
+  product: hair_conditioner
+
+replenish_shampoo:
+  account: many_products_with_all_unfulfilled_replenishments
+  product: shampoo
+
+replenish_hair_mask:
+  account: many_products_with_all_unfulfilled_replenishments
+  product: hair_mask
+
+replenish_face_mask:
+  account: many_products_with_some_unfulfilled_replenishments
+  product: face_mask
+  fulfilled_at: 2024-05-11
+
+replenish_pimple_path:
+  account: many_products_with_some_unfulfilled_replenishments
+  product: pimple_patch

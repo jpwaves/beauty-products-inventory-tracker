@@ -1,13 +1,86 @@
 # Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
-one:
-  name: Conditioner
+product_zero_quantity:
+  name: 'Product Zero Quantity'
   quantity: 0
-  account: one
+  account: one_product_zero_quantity
 
-two:
-  name: Shampoo
+product_no_link:
+  name: 'Product No Link'
+  quantity: 1
+  account: one_product_no_link
+
+hand_soap:
+  name: 'Hand Soap'
+  quantity: 1
+  account: one_product
+
+cleanser:
+  name: 'Cleanser'
+  quantity: 2
+  purchase_link: yesstyle.com
+  purchase_link_website_name: 'YesStyle'
+  account: many_products_with_no_unfulfilled_replenishments
+
+toner:
+  name: 'Toner'
+  quantity: 0
+  purchase_link: yesstyle.com
+  purchase_link_website_name: 'YesStyle'
+  account: many_products_with_no_unfulfilled_replenishments
+
+moisturizer:
+  name: 'Moisturizer'
   quantity: 1
   purchase_link: yesstyle.com
+  purchase_link_website_name: 'YesStyle'
+  account: many_products_with_no_unfulfilled_replenishments
+
+sunscreen:
+  name: 'Sunscreen'
+  quantity: 5
+  purchase_link: oliveyoung.com
+  purchase_link_website_name: 'Olive Young'
+  account: many_products_with_no_unfulfilled_replenishments
+
+hair_conditioner:
+  name: 'Hair Conditioner'
+  quantity: 0
+  purchase_link: yesstyle.com
+  purchase_link_website_name: 'YesStyle'
+  account: many_products_with_all_unfulfilled_replenishments
+
+shampoo:
+  name: 'Shampoo'
+  quantity: 0
+  purchase_link: yesstyle.com
   purchase_link_website_name: Yesstyle
-  account: two
+  account: many_products_with_all_unfulfilled_replenishments
+
+hair_mask:
+  name: 'Hair Mask'
+  quantity: 0
+  purchase_link: yesstyle.com
+  purchase_link_website_name: 'YesStyle'
+  account: many_products_with_all_unfulfilled_replenishments
+
+face_mask:
+  name: 'Face Mask'
+  quantity: 0
+  purchase_link: yesstyle.com
+  purchase_link_website_name: 'YesStyle'
+  account: many_products_with_some_unfulfilled_replenishments
+
+pimple_patch:
+  name: 'Pimple Patch'
+  quantity: 0
+  purchase_link: yesstyle.com
+  purchase_link_website_name: 'YesStyle'
+  account: many_products_with_some_unfulfilled_replenishments
+
+cleansing_oil:
+  name: 'Cleansing Oil'
+  quantity: 1
+  purchase_link: yesstyle.com
+  purchase_link_website_name: 'YesStyle'
+  account: many_products_with_some_unfulfilled_replenishments

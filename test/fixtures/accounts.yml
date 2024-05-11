@@ -1,9 +1,33 @@
 # Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
-one:
-  email: one@email.com
+no_products:
+  email: no_products@email.com
   encrypted_password: password
 
-two:
-  email: two@email.com
+one_product_zero_quantity:
+  email: one_product_zero_quantity@email.com
+  encrypted_password: password
+
+one_product_no_link:
+  email: one_product_no_link@email.com
+  encrypted_password: password
+
+one_product:
+  email: one_product@email.com
+  encrypted_password: password
+
+many_products_with_no_unfulfilled_replenishments:
+  email: many_products_with_no_unfulfilled_replenishments@email.com
+  encrypted_password: password
+
+many_products_with_all_unfulfilled_replenishments:
+  email: many_products_with_all_unfulfilled_replenishments@email.com
+  encrypted_password: password
+
+many_products_with_some_unfulfilled_replenishments:
+  email: many_products_with_some_unfulfilled_replenishments@email.com
+  encrypted_password: password
+
+replenishments_test:
+  email: replenishments_test@email.com
   encrypted_password: password
