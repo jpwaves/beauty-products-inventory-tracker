@@ -3,7 +3,6 @@
 one:
   account: one
   product: one
-  fulfilled_at: 2024-05-11
 
 two:
   account: two
