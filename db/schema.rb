@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.1].define(version: 2024_05_11_193024) do
+ActiveRecord::Schema[7.1].define(version: 2024_05_17_215143) do
   create_table "accounts", force: :cascade do |t|
     t.string "email", null: false
     t.string "encrypted_password", null: false
@@ -29,17 +29,5 @@ ActiveRecord::Schema[7.1].define(version: 2024_05_11_193024) do
     t.index ["account_id"], name: "index_products_on_account_id"
   end
 
-  create_table "replenishments", force: :cascade do |t|
-    t.integer "account_id", null: false
-    t.integer "product_id", null: false
-    t.date "fulfilled_at"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-    t.index ["account_id"], name: "index_replenishments_on_account_id"
-    t.index ["product_id"], name: "index_replenishments_on_product_id"
-  end
-
   add_foreign_key "products", "accounts"
-  add_foreign_key "replenishments", "accounts"
-  add_foreign_key "replenishments", "products"
 end
