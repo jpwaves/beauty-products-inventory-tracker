@@ -38,4 +38,14 @@ class ProductTest < ActiveSupport::TestCase
     assert_includes out_of_stock_products, zero_quantity, 'Product with zero quantity is considered out of stock'
     assert_not_includes out_of_stock_products, one_quantity, 'Product with one quantity is not considered out of stock'
   end
+
+  test 'active scope returns products whose archived column is false' do
+    active_product = Product.create!(name: 'Active', quantity: 1, account: @account, archived: false)
+    archived_product = Product.create!(name: 'Archived', quantity: 1, account: @account, archived: true)
+
+    active_products = Product.active
+
+    assert_includes active_products, active_product, 'Active product is considered active'
+    assert_not_includes active_products, archived_product, 'Archived product is not considered active'
+  end
 end

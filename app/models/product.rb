@@ -6,4 +6,5 @@ class Product < ApplicationRecord
 
   scope :low_stock, -> { where(quantity: 1) }
   scope :out_of_stock, -> { where(quantity: 0) }
+  scope :active, -> { where(archived: false) }
 end
