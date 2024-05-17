@@ -1,3 +1,19 @@
+# frozen_string_literal: true
+
+# == Schema Information
+#
+# Table name: products
+#
+#  id                         :integer          not null, primary key
+#  name                       :string           not null
+#  quantity                   :integer          not null
+#  purchase_link              :string
+#  purchase_link_website_name :string
+#  account_id                 :integer          not null
+#  created_at                 :datetime         not null
+#  updated_at                 :datetime         not null
+#  archived                   :boolean          default(FALSE), not null
+#
 require 'test_helper'
 
 class ProductTest < ActiveSupport::TestCase

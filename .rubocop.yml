@@ -1,0 +1,16 @@
+AllCops:
+  Exclude:
+    - 'bin/*'
+    - 'db/schema.rb'
+    - 'db/seeds.rb'
+    - 'node_modules/**/*'
+    - 'vendor/**/*'
+    - 'log/**/*'
+    - 'tmp/**/*'
+    - 'public/**/*'
+    - 'config/**/*'
+
+Style/Documentation:
+  Exclude:
+    - 'db/migrate/*'
+    - 'test/**/*'
